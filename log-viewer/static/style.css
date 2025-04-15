@@ -1,0 +1,47 @@
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.card {
+  background-color: #1f1f1f;
+  border: 1px solid #333;
+  padding: 20px;
+  border-radius: 8px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+pre {
+  font-size: 14px;
+  color: #00ff99;
+  white-space: pre-wrap;
+}
+#log-content {
+  max-height: 450px;
+  overflow-y: auto;
+  font-family: "Courier New", monospace;
+  font-size: 0.95rem;
+}
+
+.log-line {
+  line-height: 1.6;
+  padding-left: 10px;
+}
+
+/* Animation Fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade {
+  animation: fadeIn 0.4s ease-in-out;
+}
